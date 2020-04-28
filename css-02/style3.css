@@ -1,0 +1,23 @@
+/*Selectores agrupados*/
+.title,
+.parrafo{
+  color: red;
+}
+
+/*Selectores descendientes*/
+.list .list-item{
+  /*No es una buena práctica usar selectores descendientes
+  debido a la especificidad de las clases. Por ejemplo, 
+  para este caso bastaba con poner como selector solo
+  .list-item */
+  color: blue;
+}
+
+/* Selector hijo directo */
+li>ul{
+  display: none;
+}
+
+li:hover ul{
+  display: block;
+}

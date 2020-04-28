@@ -1,0 +1,101 @@
+:root{
+  --color-title: green;
+  --color-subtitle:purple;
+}
+
+body{
+  font-size: 2em;
+}
+
+.title-1{
+  color: var(--color-title);
+}
+
+.title-2{
+  color: var(--color-subtitle);
+}
+
+.subtitle{
+  font-size: .5em;
+  margin-top: -2em;
+}
+
+/*Selector hermano siguiente*/
+.title-1 + .subtitle{
+  color: var(--color-title);
+}
+
+/*Selector hermano siguiente*/
+.title-2 + .subtitle{
+  color: var(--color-subtitle);
+}
+
+/*Selector hermanos siguientes*/
+.hermano-mayor ~ .hermano{
+  background: yellow;
+}
+
+.enabled{
+  display: none;
+}
+
+.check:checked + .enabled{
+  display: block;
+}
+
+/*Selector hermanos siguientes*/
+.check:checked ~ .disabled{
+  display: none;
+}
+
+/*Selector de atributo*/
+[type="email"]{
+  border: 1px solid blue;
+}
+
+/*Selector de atributo*/
+[type="submit"]{
+  background: red;
+  color: white;
+  border: none;
+}
+
+/*Selector de atributo*/
+[required]{
+  border: 2px solid red;
+  margin: .5em;
+}
+
+a{
+  color: green;
+}
+
+/*Selector de atributo comienza con*/
+[href^="/"],
+[href^="https://ed.team"]{
+  color: red;
+}
+
+/*Selector de atributo termina con*/
+[href$=".pdf"]{
+  color: red;
+  background: url(pdf.png) no-repeat center right / 2rem;
+  padding-right: 2.2rem;
+}
+
+/*Selector de atributo que contiene*/
+[class*="button-"]{
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  text-decoration: none;
+  color: white;
+}
+
+.button-cta{
+  background: green;
+}
+
+.button-alert{
+  background: red;
+}

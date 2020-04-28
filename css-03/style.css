@@ -1,0 +1,42 @@
+#main .post p{
+  color: red;
+}
+
+p{
+  color: green;
+}
+
+div#main .post p{
+  color: blue;
+}
+
+body div#main .post p{
+  color: purple;
+}
+
+span{
+  font-size: initial;
+}
+
+h2{
+  color: red;
+}
+
+a{
+  color: inherit;
+}
+
+ul{
+  color: red;
+}
+
+li{
+  color: initial;
+}
+ul span{
+  font-size: inherit;
+}
+
+.last{
+  color: inherit;
+}

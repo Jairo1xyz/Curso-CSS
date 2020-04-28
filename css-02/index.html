@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase 02 - Curso CSS - EDteam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title center">Soy un título</h1>
+  <p class="description bold center">Soy un parrafo</p>
+  <!-- Se puede usar emojis unicode en clases CSS.
+  Buscar "Emoji Unicode table" en google.
+  Copiar y pegar directamente los emojis
+  Para imprimir un emoji unicode en HTML
+  también se puede acceder a la descripción del emoji,
+  ver su código decimal y escribirlo  con &# al principio
+  y ; al final (todo junto)-->
+  <p id="id" class="_p1 😂 ">Soy otro parrafo 😂 
+    &#128514; &#128272; &#128271; &#128525;
+  </p>
+
+  <!-- Es conveniente no usar el selector universal en CSS -->
+  <!-- El span no se muestra porque, aunque el CSS le 
+  ordena aparecer, su padre está en display none debido
+  al selector universal. -->
+  <ul>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item <span>7</span></li>
+  </ul>
+</body>
+</html>
